@@ -1,0 +1,64 @@
+full stack                                          mean                                  mern
+front end:
+          Html
+          css:boostarp  
+          js:                                      Angular.js                             ReactJs
+
+
+
+Mware:     
+     java
+    servelt/jsp                                    express.js                             express.js  
+                                           
+                                                   Node.js                                Node.js
+                                        
+
+                                          
+
+    
+     server::Tomcat
+
+     python:
+              Django/Flask
+     server :http
+
+             .net:
+     server:IIS
+
+
+BackEnd:                            MangoDb                                   MongoDb
+            Mysql
+             oracle
+
+
+
+
+
+echo "# KLUB2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pavanssai45/KLUB2.git
+git push -u origin main
+
+
+
+https://paste.ubuntu.com/p/cMZSxd6KhD/
+https://paste.ubuntu.com/p/kVTr3vvMn8/
+
+
+
+
+ 3 steps:
+instead of href we use routerlink=""
+<router-outlet></router-outlet>
+
+in routing file
+{
+path:'Home',
+component:LoginComponent
+}
+
+
+thanes

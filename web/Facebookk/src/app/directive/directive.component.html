@@ -1,0 +1,17 @@
+ <h1>Welcome</h1>
+ <h4>
+    <ul  *ngFor="let myval of arr">
+        <li>{{myval}}</li>
+        </ul>
+        <hr>
+        <input type="text" #fruit>
+        <input type="submit" value="Add fruit"
+        (click)="add(fruit.value)">
+        <ul *ngFor="let f fruit">
+            <li *ngIf="f=='Apple' ">{{f}}</li>"
+            
+
+
+       
+        </ul>
+ </h4>

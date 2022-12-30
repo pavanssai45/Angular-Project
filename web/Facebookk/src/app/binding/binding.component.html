@@ -1,0 +1,32 @@
+<div style="text-align: center;">
+    <h1>Hi Welcome to Binding </h1>
+    F NAME: <input type="text" #fname> <br>
+    L NAME: <input type="text" #lname> <br>
+    <input type="submit" value="CLICK" (click)="abc(fname.value,lname.value)">
+    </div>
+    <hr>
+    {{myname}}<br>
+
+<div style="text-align: center;">
+    <h1> Hi Cal </h1>
+   <h3>
+    Princ : <input type="text" #p><br>
+    Time :<input type="text" #t><br>
+    <select (change)="roi($event)">
+        <option>Lone Type </option>
+        <option value="home">HOME </option>
+        <option value="car">CAR </option>
+        <option value="persl">PERSONL  </option>
+        <option value="edu">EDU </option>
+    </select><br>
+    ROI :<input type="text" value={{intrest}} disabled #r><br>
+    TOTAL : <input type="text" value={{total}}>
+    <br>
+    EMI  : <input type="text" value={{emi}}>
+    <br>
+
+   <br> <input type="submit" value="CACULATE" 
+   (click)="cal(p.value,t.value,r.value)">
+   </h3>
+</div>
+

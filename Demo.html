@@ -1,0 +1,229 @@
+<!--<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div style="=text:align-center"
+            <h1>Welcome to Web App</h1>
+            
+          <form>
+           <br> NAME : <input type="text"><br>
+          </br>
+            
+            <br>Pass :   <input type="password"><br>
+        </br>
+            <br>
+                AGE : <input type="number" 
+ 
+            style="width: 300px;height: 50px;border-radius: 10px;" placeholder="Enter Age"><br>
+
+    </br>
+            DOB : <input type="date"><br>
+    </br>
+           <br> Gender :
+                <input type="radio" name="g1">:MALE 
+                <input type="radio" name="g1">:FEMALE 
+</br>
+            <br> 
+    
+            Subject : 
+                <input type="checkbox">:JAVA
+                <input type="checkbox" checked>:C prog 
+                <input type="checkbox">:C PP
+                <input type="checkbox">:Pytrhon 
+                <input type="checkbox">:MEAN 
+                <br>
+            Address : 
+                <textarea >
+    
+                </textarea>
+            <br>
+            Resum: <input type="file">
+            <br>
+            MIN :<input type="range">:MAX
+            <br><br>
+            <input type="submit">
+    
+            <input type="submit" value="LOGIn">
+            <input type="submit" value="REGISTER">
+    
+            <input type="reset">
+          </form>
+    
+            
+    
+    </body>
+    </html>-->
+
+   <!----<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook </title>
+    <style>
+        #mybtn{
+            background-color: green;
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        #mybtn:hover{
+            background-color: rgb(13, 228, 13);
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        body{
+            background-image: url('klu.jpg');
+            color: red;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body >
+        <div style="text-align: center;">
+            <h1>Welcome to Web App</h1>
+
+      <form>
+        NAME : <input type="text"><br>
+        Pass :<input type="password"><br>
+        AGE : <input type="number" 
+        style="width: 300px;height: 50px;border-radius: 10px;" placeholder="Enter Age"><br>
+        DOB : <input type="date"><br>
+        Gender :
+            <input type="radio" name="g1">:MALE 
+            <input type="radio" name="g1">:FEMALE 
+        <br> 
+
+        Subject : 
+            <input type="checkbox">:JAVA
+            <input type="checkbox" checked>:C prog 
+            <input type="checkbox">:C PP
+            <input type="checkbox">:Pytrhon 
+            <input type="checkbox">:MEAN 
+            <br>
+        Address : 
+            <textarea >
+
+            </textarea>
+        <br>
+        Resum: <input type="file">
+        <br>
+        MIN :<input type="range">:MAX
+        <br><br>
+        <input type="submit" id="mybtn">
+
+        <input type="submit" value="LOGIn">
+        <input type="submit" value="REGISTER">
+
+        <input type="reset">
+      </form>
+
+
+        </div>        
+
+        
+</body>
+</html>-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+            fn=document.getElementById('fn').value;
+            ln=document.getElementById('ln').value;
+
+            fullname=fn + " "+ln ;
+            document.getElementById('full').value=fullname;
+        }
+        function add()
+        {
+           
+            a=parseInt(  document.getElementById('a').value);
+            b=parseInt(  document.getElementById('b').value);
+
+            c=a + b;
+            document.getElementById('result').value=c;
+       
+        }
+        function sub()
+        {
+           
+            a=parseInt(  document.getElementById('a').value);
+            b=parseInt(  document.getElementById('b').value);
+
+            c=a - b;
+            document.getElementById('result').value=c;
+       
+        }
+        function mul()
+        {
+           
+            a=parseInt(  document.getElementById('a').value);
+            b=parseInt(  document.getElementById('b').value);
+
+            c=a * b;
+            document.getElementById('result').value=c;
+       
+        }
+        function div()
+        {
+           
+            a=parseInt(  document.getElementById('a').value);
+            b=parseInt(  document.getElementById('b').value);
+
+            c=a / b;
+            document.getElementById('result').value=c;
+       
+        }
+        function xyz()
+        {
+            document.getElementById('fn').style.backgroundColor="pink";
+        }
+
+    </script>
+</head>
+<body bgcolor="cyan">
+    <Marquee onmouseover="stop()" onmouseout="start()"> <h1 style="color: red;">Welcome to Web App</h1></Marquee>
+        <div style="text-align: center;">
+           
+        
+      <form>
+        FIRST NAME : <input type="text" id="fn" onblur="xyz()"><br>
+        LAST NAME :<input type="text" id="ln"><br>
+        Full name : <input type="text" id="full" onfocus="abc()"><br>
+        <input type="button" onclick="abc()" value="CLICK">
+        <input type="reset">
+      </form>
+
+
+      <form>
+       A  : <input type="text" id="a" ><br>
+       B <input type="text" id="b"><br>
+       Result : <input type="text" id="result"><br>
+        <input type="button" onclick="add()" value="ADD">
+        <input type="button" onclick="sub()" value="SUB">
+        <input type="button" onclick="mul()" value="MUL">
+        <input type="button" onclick="div()" value="DIV">
+        <input type="reset">
+      </form>
+
+        </div>
+        
+
+</body>
+</html>
